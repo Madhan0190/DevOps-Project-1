@@ -30,3 +30,6 @@ jobs:
 
       - name: Test
         run: dotnet test HelloDevOps.slnx --configuration Release --no-build
+
+      - name: Build Docker image
+        run: docker build --tag hello-devops:ci .
